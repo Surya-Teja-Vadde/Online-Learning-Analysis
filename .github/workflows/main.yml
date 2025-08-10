@@ -1,0 +1,30 @@
+name: Auto Commit Error Logs
+
+on:
+  schedule:
+    - cron: "0 */1 * * *"  # Every 1 hours
+  workflow_dispatch:       # Allow manual run too
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: error-logs  # Work on the error-logs branch
+
+      - name: Set up Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit changes if any
+        run: |
+          git add Error_folder/
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-update error logs [skip ci]"
+            git push origin error-logs
+          else
+            echo "No changes detected"
+          fi
