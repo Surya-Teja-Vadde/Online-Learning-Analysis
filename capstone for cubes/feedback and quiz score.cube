@@ -1,0 +1,987 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8ec4ef79-41ce-413e-ab46-4665ee86842f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>feedback and quiz score</ID>
+  <Name>feedback and quiz score</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-13597" scrolltop="32" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="76" x="27675" y="15558" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCourse" left="5357" top="0" logicalid="14" controlid="1" masterid="0" hint1="0" hint2="0" width="3942" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000660f00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimCourse" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactEnrollments" left="5754" top="6395" logicalid="15" controlid="2" masterid="0" hint1="0" hint2="0" width="3545" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d90d000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactEnrollments" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDate" left="11699" top="9884" logicalid="16" controlid="3" masterid="0" hint1="0" hint2="0" width="3175" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000670c0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDate" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimLearner" left="8766" top="17125" logicalid="17" controlid="4" masterid="0" hint1="0" hint2="0" width="3175" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000670c000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimLearner" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactQuizScores" left="11699" top="3065" logicalid="18" controlid="5" masterid="0" hint1="0" hint2="0" width="3016" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000c80b000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactQuizScores" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactFeedback" left="3112" top="17125" logicalid="19" controlid="6" masterid="0" hint1="0" hint2="0" width="3254" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60c0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactFeedback" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimInstructor" left="-2660" top="7390" logicalid="20" controlid="7" masterid="0" hint1="0" hint2="0" width="3334" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000060d00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimInstructor" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="6929" top="3496" logicalid="21" controlid="8" masterid="0" hint1="0" hint2="0" width="897" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactEnrollments_Course]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7328" y="3995" />
+              <point x="7328" y="5195" />
+              <point x="7526" y="5195" />
+              <point x="7526" y="6395" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="374" top="8565" logicalid="22" controlid="9" masterid="0" hint1="0" hint2="0" width="5680" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactEnrollments_Instructor]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="2" sourceattachpoint="15" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="674" y="8964" />
+              <point x="4554" y="8964" />
+              <point x="4554" y="8895" />
+              <point x="5754" y="8895" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7776" top="11095" logicalid="23" controlid="10" masterid="0" hint1="0" hint2="0" width="2977" height="6530" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactEnrollments_Learner]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10353" y="17125" />
+              <point x="10353" y="14260" />
+              <point x="8076" y="14260" />
+              <point x="8076" y="11395" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8999" top="9145" logicalid="24" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="3560" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_FactEnrollments_Date]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="18" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11699" y="12305" />
+              <point x="10499" y="12305" />
+              <point x="10499" y="9445" />
+              <point x="9299" y="9445" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4439" top="10896" logicalid="25" controlid="12" masterid="0" hint1="0" hint2="0" width="2387" height="6529" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FactFeedback-FactEnrollments]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="6" sourceattachpoint="3" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6426" y="11395" />
+              <point x="6426" y="14260" />
+              <point x="4739" y="14260" />
+              <point x="4739" y="17125" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8999" top="4974" logicalid="26" controlid="13" masterid="0" hint1="0" hint2="0" width="3000" height="3221" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FactQuizScores-FactEnrollments]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="19" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9299" y="7795" />
+              <point x="10499" y="7795" />
+              <point x="10499" y="5274" />
+              <point x="11699" y="5274" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-13597</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>32</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-2660</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>76</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="7638cc66-afde-4514-b550-2f0ec6946af7">
+      <ID>Fact Enrollments</ID>
+      <Name>Fact Enrollments</Name>
+      <DimensionID>Fact Enrollments</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="096ae41e-506b-4135-baea-cbf17526c9e8">
+          <AttributeID>Enrollment ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1d6af770-be60-4fe7-996b-558c511f452e">
+          <AttributeID>Course ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="53d909ce-23ce-458b-b370-0b1c79d1657b">
+          <AttributeID>Instructor ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dea90220-95db-4dfb-9a65-b151b48f0fe1">
+          <AttributeID>Learner ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="94b38e7d-afae-46df-8bf4-6fad191e977f">
+          <AttributeID>Date ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4e68d5af-64bf-4dcf-8b56-d27671529c7d">
+      <ID>Dim Course</ID>
+      <Name>Dim Course</Name>
+      <DimensionID>Dim Course</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e084d131-5a72-467e-8e9f-54b10db7b6e8">
+          <AttributeID>Course ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="90108916-f762-44b7-b3ec-34ede7fcca57">
+          <AttributeID>Subject Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="696c8eee-1dad-40d2-bc95-fceafe5dd79c">
+          <AttributeID>Course Level</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="448e1811-7f56-4771-864f-fb3eed296df7">
+          <AttributeID>Duration Weeks</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc9e7222-dbf6-4a95-9ce4-dcfc268803df">
+          <AttributeID>Is Active</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7b3e32a7-7df0-4cd9-806e-fda87e793990">
+          <AttributeID>Course Duration Type</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3b3a5f00-7f55-4ad9-a8a6-0b4c0f4c91d0">
+      <ID>Dim Instructor</ID>
+      <Name>Dim Instructor</Name>
+      <DimensionID>Dim Instructor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e7c606d9-7e28-4802-a961-e5535b4c8bf2">
+          <AttributeID>Instructor ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="af77a89b-3155-4c05-afcb-9f0588899541">
+          <AttributeID>Specialization</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="52ef580f-1fb6-4ea8-b2e3-10ac376ff34e">
+          <AttributeID>Region</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b2a58172-854b-45f9-94bb-5fb3a4bc1c76">
+          <AttributeID>Experience Years</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b0b000dc-8050-4c59-8b3e-5685d4e9c83b">
+      <ID>Dim Learner</ID>
+      <Name>Dim Learner</Name>
+      <DimensionID>Dim Learner</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3a1dea37-1db5-4aa5-a9a7-95cd2690e790">
+          <AttributeID>Learner ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0977902d-6227-4cce-8007-afee68608ee5">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ce34dfd4-b5f0-4132-a6b6-e513a29fef23">
+          <AttributeID>Age Group</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5b5613d7-0969-4f9e-8152-bd5899c1e962">
+          <AttributeID>Region</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ac3f68ce-66c5-46b9-8d9a-c1a222f3c72a">
+          <AttributeID>Education Level</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2843a1b1-49c5-408b-84a6-972417decef3">
+          <AttributeID>Specialisation</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2cc22d05-edf9-44c8-a154-871f210f7d2c">
+          <AttributeID>Expertise</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cb77a542-3741-4bdd-aa2e-f547bb3c4e2a">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <DimensionID>Dim Date</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="83d696e0-281c-4027-8e9c-0c7fe72888b3">
+          <AttributeID>Date ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="553106bf-3b90-43d6-9aaa-e6b104ea97e4">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ee6a3c5b-1c57-4882-9af3-dd50362b460a">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ffe2f704-1d59-4cf4-a880-187eb6587088">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="07599883-4ac5-457b-a56b-4578be073a90">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf5161e8-26db-4615-bde9-8708d804e539">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41a8a19c-593f-4026-aec3-7ee41deb04fe">
+          <AttributeID>Weekday Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29eac8d8-3848-489d-8e92-2cd3ab919a4a">
+          <AttributeID>Is Weekend</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a750ef68-2e9e-47d1-b93c-67300fc1b5a3">
+      <ID>Fact Quiz Scores</ID>
+      <Name>Fact Quiz Scores</Name>
+      <DimensionID>Fact Quiz Scores</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e9df5a4c-4ec2-49d0-a969-fb0bf97fd96e">
+          <AttributeID>Quiz Attempt ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9dbabfda-b49d-4e22-b44a-390f3db9af09">
+          <AttributeID>Enrollment ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="b2e5f906-7be2-4001-b504-28d00138f05b">
+      <ID>Fact Enrollments</ID>
+      <Name>Fact Enrollments</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="be28114d-17a7-4138-b9f6-2ba24b5dcbb8">
+          <ID>Time Spent Days</ID>
+          <Name>Time Spent Days</Name>
+          <Source dwd:design-time-name="9b91577b-4737-40bd-887b-9a29126d5626">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4581ad0a-2ddf-4b18-9ff5-0b7e3942b1ec">
+              <TableID>dbo_FactEnrollments</TableID>
+              <ColumnID>TimeSpentDays</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ddf34fcf-9b0c-426f-893a-dd7032cbb597">
+          <ID>Is Completed</ID>
+          <Name>Is Completed</Name>
+          <Source dwd:design-time-name="d4bcf42f-eee6-46b0-9e4a-ca168e431253">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ca841ef0-0ae0-4439-b7a3-ff70e2c93925">
+              <TableID>dbo_FactEnrollments</TableID>
+              <ColumnID>IsCompleted</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9c5fa0cb-b259-427a-b569-cc6898ecefa2">
+          <ID>Is Dropped</ID>
+          <Name>Is Dropped</Name>
+          <Source dwd:design-time-name="0059990b-e784-43d4-bf69-572e34868499">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2da1d828-0985-4012-9dd3-fa5801cc96e2">
+              <TableID>dbo_FactEnrollments</TableID>
+              <ColumnID>IsDropped</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bbed99ac-b1cb-4f28-8570-685b7455ad02">
+          <ID>Fact Enrollments Count</ID>
+          <Name>Fact Enrollments Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f4025737-4314-4867-a29d-235e59a67f5b">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="609cd997-e5c0-4a48-bd98-c35f7486c652">
+              <TableID>dbo_FactEnrollments</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="fe9eaa47-daef-45b2-b5b5-6d5aed736faa">
+          <CubeDimensionID>Fact Enrollments</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="81c4a2da-5a35-4a6e-b11f-ebf8add51a94">
+              <AttributeID>Enrollment ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="39f8727f-41fd-4a4d-8fb4-fe68921b3f4f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ff3b7a75-ad26-45f2-8c5a-46f34e5d044d">
+                    <TableID>dbo_FactEnrollments</TableID>
+                    <ColumnID>EnrollmentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d1316ca8-f41e-42d3-bafa-55fd4794c827">
+          <CubeDimensionID>Dim Course</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b2814fa5-5288-421d-8019-9bd74c5fc197">
+              <AttributeID>Course ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="26ec5e25-9fb3-404b-b5aa-c84f630561bf">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e2519e14-5150-4f61-8922-64d103a6e844">
+                    <TableID>dbo_FactEnrollments</TableID>
+                    <ColumnID>CourseID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7b661f94-ca39-42bc-9cd1-d0459f903372">
+          <CubeDimensionID>Dim Instructor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2c9b7f9d-d64b-4fb9-a691-e710d2843453">
+              <AttributeID>Instructor ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0f7af9c4-7a1a-4a03-ad17-f92f881f513a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1306f895-c87c-46cd-9bf3-cbc456f311a4">
+                    <TableID>dbo_FactEnrollments</TableID>
+                    <ColumnID>InstructorID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="91e91e5f-c7d5-40bc-b1e9-aac274a0d7e1">
+          <CubeDimensionID>Dim Learner</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9d969361-9b54-42c6-87ed-f31e790225e6">
+              <AttributeID>Learner ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f9401f90-4248-4e44-a3a4-b5e6bf96ade7">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5fd60429-e78d-4982-a0e5-c4c7a12a6e15">
+                    <TableID>dbo_FactEnrollments</TableID>
+                    <ColumnID>LearnerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0b32d12a-e841-480e-aeb6-adc6f2d7a834">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e891d59a-9600-40f6-8609-160a60667ab9">
+              <AttributeID>Date ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fb29a149-4106-4b18-b2c2-755c8b5febd0">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="21bac1c6-8fc5-4e14-9b3d-562f5101ffdf">
+                    <TableID>dbo_FactEnrollments</TableID>
+                    <ColumnID>DateID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="363ba5ec-61d2-4f6a-8424-f5f199a1f947">
+      <ID>Fact Feedback</ID>
+      <Name>Fact Feedback</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="2ad174c9-bc86-4dcc-bf2d-53bb230019d3">
+          <ID>Rating</ID>
+          <Name>AverageFeedbackRating</Name>
+          <Source dwd:design-time-name="d2851abf-79fb-41ed-a2b8-52645ff1a5e4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9e0262bb-2e6c-4af5-91c4-ab70e672f92c">
+              <TableID>dbo_FactFeedback</TableID>
+              <ColumnID>Rating</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e80eb92c-68d1-43ba-9f8d-f870cf67916b">
+          <ID>Comment Length</ID>
+          <Name>Comment Length</Name>
+          <Source dwd:design-time-name="2b7687a5-c763-4a2a-a3e7-bf125fd089af">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ca85d1e7-6bf0-43f7-b9e8-10572b5b7624">
+              <TableID>dbo_FactFeedback</TableID>
+              <ColumnID>CommentLength</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="391fb5eb-658e-4040-bf06-377999d4a0d1">
+          <ID>Fact Feedback Count</ID>
+          <Name>Fact Feedback Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a0595ea1-0d19-4493-964a-2437cde6a744">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f7ebc319-c912-49a6-95bb-d6db14fc49d5">
+              <TableID>dbo_FactFeedback</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="80aecbc2-478f-4720-b08b-2774fcf72b39">
+          <CubeDimensionID>Fact Enrollments</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5ef2805f-68ab-4ff5-87cf-8cfd49c427b6">
+              <AttributeID>Enrollment ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="23ddca21-e55e-4c55-9939-012764c83e69">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="688df8ee-3959-47e3-952f-c997aa50b391">
+                    <TableID>dbo_FactFeedback</TableID>
+                    <ColumnID>EnrollmentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6435616c-608b-480b-9375-e593858dfa6a">
+          <CubeDimensionID>Dim Course</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c36d15f6-8bc9-4aef-a151-5b5ff879fabf">
+              <AttributeID>Course ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Course ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3b801641-fff1-4a9e-b08a-5f7eb4b11793">
+          <CubeDimensionID>Dim Instructor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1715db5d-8766-4a20-bde1-8043249abeba">
+              <AttributeID>Instructor ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Instructor ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="359e7472-1542-4ef0-80be-cc87c5d161de">
+          <CubeDimensionID>Dim Learner</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dee426d2-ffcc-4f16-a1a6-319c62a50eeb">
+              <AttributeID>Learner ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Learner ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="22e66334-b33d-4473-895a-e262e0a4152b">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d5424d36-b212-4829-bf5f-af92847d4d63">
+              <AttributeID>Date ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Date ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="808f9e0b-fce3-4e4f-8ee5-d053adf9446b">
+      <ID>Fact Quiz Scores</ID>
+      <Name>Fact Quiz Scores</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="68ac873f-fca0-44a0-b48c-8e3694b1a851">
+          <ID>Score</ID>
+          <Name>QuizScoreAverage</Name>
+          <AggregateFunction>AverageOfChildren</AggregateFunction>
+          <Source dwd:design-time-name="3ead967d-407a-4f40-a232-f59782a0670d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="771d84cd-4c72-4d94-82ae-68d516fbf566">
+              <TableID>dbo_FactQuizScores</TableID>
+              <ColumnID>Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="be4726ed-645e-4cce-a8c2-e00e0159f9ed">
+          <ID>Max Score</ID>
+          <Name>Max Score</Name>
+          <Source dwd:design-time-name="e15ac37f-feca-42da-8cb8-013e8d166af3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e6ca2b96-1e13-4443-9030-c7e837dcdf5d">
+              <TableID>dbo_FactQuizScores</TableID>
+              <ColumnID>MaxScore</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7ce22a60-21f2-4a7a-bd97-64a9d79dc7a8">
+          <ID>Student GPA</ID>
+          <Name>Student GPA</Name>
+          <Source dwd:design-time-name="6f1bb23c-714c-4430-8263-d0f08a58ca69">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ea7f8860-3115-442f-b98a-1f2987605eff">
+              <TableID>dbo_FactQuizScores</TableID>
+              <ColumnID>Student_x0020_GPA</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5b79fad0-9573-4686-ba49-abaf98e70e58">
+          <ID>Fact Quiz Scores Count</ID>
+          <Name>Fact Quiz Scores Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a6d84333-378e-4236-8b93-99527b6ee8bf">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0974ecca-a31a-4767-8777-94a06799311c">
+              <TableID>dbo_FactQuizScores</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="892ec027-21d2-4905-975f-6e2cc680fb26">
+          <ID>Minimum Score</ID>
+          <Name>Min Score</Name>
+          <AggregateFunction>Min</AggregateFunction>
+          <Source dwd:design-time-name="be95973d-dbf3-4db5-8adb-3313b77ac7f3">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="114e320a-2b35-47d5-87fb-4e5ba651d552">
+              <TableID>dbo_FactQuizScores</TableID>
+              <ColumnID>Score</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="6c4c0bb6-36a3-4c65-b6a3-4cac2a97712f">
+          <CubeDimensionID>Fact Quiz Scores</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5df08e06-ab14-4723-9471-a29d01c80825">
+              <AttributeID>Quiz Attempt ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8119811f-d4a9-473b-beec-7c434737b472">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3678cf41-9bb1-4b91-85f9-bf6b69948b35">
+                    <TableID>dbo_FactQuizScores</TableID>
+                    <ColumnID>QuizAttemptID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="de3bd2dc-7262-48a3-a524-b3be5f03ac3d">
+          <CubeDimensionID>Fact Enrollments</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5a80f6d0-f1ae-4694-8621-70d07cd71cdb">
+              <AttributeID>Enrollment ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bb346844-ef56-4794-98f8-668313c59010">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f752f04f-487f-4201-96cb-675695a5b89e">
+                    <TableID>dbo_FactQuizScores</TableID>
+                    <ColumnID>EnrollmentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="426230d4-2156-4a89-b7d8-8961867e533b">
+          <CubeDimensionID>Dim Course</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a926efa9-bfb5-4dcf-806f-6c41f9d164d2">
+              <AttributeID>Course ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Course ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="86d13519-ba49-4483-9c2f-ad714fc0cba6">
+          <CubeDimensionID>Dim Instructor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="74bd9be9-9b0c-49ed-92ea-ab03da92ad06">
+              <AttributeID>Instructor ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Instructor ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="bb0a425a-f25a-400d-a306-2fc8d374b817">
+          <CubeDimensionID>Dim Learner</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ff86e6f5-31af-4a77-91ca-e010911af5d9">
+              <AttributeID>Learner ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Learner ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8bf869c4-bae1-447d-8db7-4b5477e2eb17">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fd5d0fe4-4279-4d0b-934f-8d87f4a0bf60">
+              <AttributeID>Date ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Date ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="dd6e4617-4759-441d-8c0d-b8ce3d746b25">
+      <ID>Fact Quiz Scores 1</ID>
+      <Name>Fact Quiz Scores 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="6b063ee0-5d15-464d-a0f7-d02bdd58309c">
+          <ID>Quiz Attempt ID Distinct Count</ID>
+          <Name>Total Quizzes</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source dwd:design-time-name="bb50aabf-f2b1-4927-ab4f-dd992d0056b3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="56e9361e-f569-4267-8bb1-ccca352bd971">
+              <TableID>dbo_FactQuizScores</TableID>
+              <ColumnID>QuizAttemptID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="579098f0-1089-4aa9-9985-6331e32d5b99">
+          <CubeDimensionID>Fact Quiz Scores</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="33d75e02-5410-468c-bc1c-9950484288c6">
+              <AttributeID>Quiz Attempt ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dbe47702-a760-4eea-9f68-4cc00b11ff34">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fedb897d-9f1c-4ca5-91f2-d2884ba41fc3">
+                    <TableID>dbo_FactQuizScores</TableID>
+                    <ColumnID>QuizAttemptID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ae857b64-9280-4460-94cf-27c36efbbb39">
+          <CubeDimensionID>Fact Enrollments</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="da7fa404-5354-4216-9e4c-ffc55e3795ed">
+              <AttributeID>Enrollment ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2ef3648d-1733-4558-822f-98f9ea94ea77">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b2392d15-b0e1-4be9-b332-f9c8f5f0cf8d">
+                    <TableID>dbo_FactQuizScores</TableID>
+                    <ColumnID>EnrollmentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="35e9ac5d-1b85-43b3-99e0-81544f143953">
+          <CubeDimensionID>Dim Course</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4c53873f-2fb6-4011-85ca-d704d0417161">
+              <AttributeID>Course ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Course ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="41aaccb1-f067-4dbc-93b8-e4ae9f4b6ef9">
+          <CubeDimensionID>Dim Instructor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b96711ca-3259-4b59-b619-11e0232ad6f0">
+              <AttributeID>Instructor ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Instructor ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="336d80a5-48d1-4110-b984-7ae1fa47681f">
+          <CubeDimensionID>Dim Learner</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b777d2f8-2503-42b0-a74b-35251c929294">
+              <AttributeID>Learner ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Learner ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="96e50095-9fe9-48e5-bd4d-0f1c98702bd1">
+          <CubeDimensionID>Dim Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="eb6f223d-bcfd-44e0-8d3d-1c1b856b643c">
+              <AttributeID>Date ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Fact Enrollments</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Date ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="2bf91c5a-fb31-4a5a-ab87-b586f33e1378">
+    <DataSourceViewID>Caspstone-project</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="3f2f59a0-dfb4-4c7d-869c-30e3d982802c">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE; 
+CREATE MEMBER CURRENTCUBE.[Measures].AverageFeedbackRating
+ AS IIF(
+     [Measures].[Fact Feedback Count]= 0,
+    NULL,
+    sum([Measures].[Rating]) / [Measures].[Fact Feedback Count]
+), 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].quizscoreaverage
+ AS IIF(
+    [Measures].[Fact Quiz Scores Count] = 0,
+    NULL,
+    SUM([Measures].[Score]) / [Measures].[Fact Quiz Scores Count]
+), 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+</Cube>

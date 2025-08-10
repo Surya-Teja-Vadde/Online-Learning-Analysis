@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="688de2a6-bbf6-4f25-b7aa-5087a4ddc446" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>feedback and quiz score</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Enrollments</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9ab6f469-6d4e-4fd0-8b8c-87f36f37a068">
+          <ID>Fact Enrollments</ID>
+          <Name>Fact Enrollments</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="46d64b6b-c51c-445d-b15a-9810724f04a5">
+            <DataSourceViewID>Caspstone-project</DataSourceViewID>
+            <TableID>dbo_FactEnrollments</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Feedback</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e2035a32-f035-4349-8100-c730e427cf6b">
+          <ID>Fact Feedback</ID>
+          <Name>Fact Feedback</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c844b1e1-4250-4a80-9e0b-bbc819f4ecae">
+            <DataSourceViewID>Caspstone-project</DataSourceViewID>
+            <TableID>dbo_FactFeedback</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Quiz Scores</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0600ff05-03fb-4f99-8ee1-c93076a73329">
+          <ID>Fact Quiz Scores</ID>
+          <Name>Fact Quiz Scores</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9356c8c1-cbb8-495a-9066-e89b829377fa">
+            <DataSourceViewID>Caspstone-project</DataSourceViewID>
+            <TableID>dbo_FactQuizScores</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Quiz Scores 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="14aa7cde-f699-4579-8a68-5884d36af438">
+          <ID>Fact Quiz Scores</ID>
+          <Name>Fact Quiz Scores</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="97f22adc-fd6d-4945-a68d-e64f746dd303">
+            <DataSourceViewID>Caspstone-project</DataSourceViewID>
+            <TableID>dbo_FactQuizScores</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

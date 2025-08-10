@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Documents\\Project\\capstone for cubes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A77BA47-2082-CB38-435B-E4709366639D}|capstone for cubes.dwproj|C:\\Users\\User\\Documents\\Project\\capstone for cubes\\feedback and quiz score.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{2A77BA47-2082-CB38-435B-E4709366639D}|capstone for cubes.dwproj|solutionrelative:feedback and quiz score.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A77BA47-2082-CB38-435B-E4709366639D}|capstone for cubes.dwproj|C:\\Users\\User\\Documents\\Project\\capstone for cubes\\enrollment and completion.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{2A77BA47-2082-CB38-435B-E4709366639D}|capstone for cubes.dwproj|solutionrelative:enrollment and completion.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "enrollment and completion.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Project\\capstone for cubes\\enrollment and completion.cube",
+              "RelativeDocumentMoniker": "enrollment and completion.cube",
+              "ToolTip": "C:\\Users\\User\\Documents\\Project\\capstone for cubes\\enrollment and completion.cube [Design]",
+              "RelativeToolTip": "enrollment and completion.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-09T07:07:51.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "feedback and quiz score.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Project\\capstone for cubes\\feedback and quiz score.cube",
+              "RelativeDocumentMoniker": "feedback and quiz score.cube",
+              "ToolTip": "C:\\Users\\User\\Documents\\Project\\capstone for cubes\\feedback and quiz score.cube [Design]",
+              "RelativeToolTip": "feedback and quiz score.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-08T18:23:30.88Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

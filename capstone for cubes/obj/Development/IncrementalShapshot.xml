@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>capstone for cubes</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>5Z4P3cRnudOtUOxkM6fMNWVnEho=8/8/2025 6:30:13 PM8/8/2025 6:30:12 PM</TimeStamp>
+        <ID>
+          <String>Caspstone-project</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>n1vWMq4JK4V+3peYUg2SleDLMSs=8/8/2025 11:22:05 PM8/8/2025 6:30:34 PM</TimeStamp>
+        <ID>
+          <String>Caspstone-project</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HPLfbgiTv8w56e3TKDRMUC2ZGMw=8/8/2025 6:33:04 PM8/8/2025 6:33:04 PM</TimeStamp>
+        <ID>
+          <String>Dim Course</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>c7XJO6peaH4jiN8f2ZGArU/lWRQ=8/8/2025 6:33:25 PM8/8/2025 6:33:25 PM</TimeStamp>
+        <ID>
+          <String>Dim Learner</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>bZ+Sc0v73fYWExlQZ4APH6/9tF4=8/8/2025 6:33:47 PM8/8/2025 6:33:44 PM</TimeStamp>
+        <ID>
+          <String>Dim Instructor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>P1cvoSCJa1QtlpX02ybQkZGCRB8=8/8/2025 11:50:06 PM8/8/2025 8:52:19 PM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>u7crTRQbp+rfP4oyxD3eSCV4ua4=8/8/2025 8:53:12 PM8/8/2025 8:53:12 PM</TimeStamp>
+        <ID>
+          <String>Fact Enrollments</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rjgSBzc7tBl2bkpFTjP5EX4WxaQ=8/8/2025 8:53:12 PM8/8/2025 8:53:12 PM</TimeStamp>
+        <ID>
+          <String>Fact Quiz Scores</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Ym2MHz/+3RxAmMESC6NPq5a4wwY=8/8/2025 11:23:20 PM8/8/2025 10:46:08 PMV0Q6eOnMHZVlgnPpe+AAYMqrXTY=8/8/2025 11:12:11 PM8/8/2025 10:46:08 PM</TimeStamp>
+        <ID>
+          <String>Caspstone-project</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>+oXY8f7IKYY5ZApwRvH9pbtMI5k=8/9/2025 5:55:39 PM8/8/2025 11:53:30 PMdkSAKubmlNDSpDc0KccIuaY32FM=8/9/2025 12:01:35 AM8/8/2025 11:53:30 PM</TimeStamp>
+        <ID>
+          <String>feedback and quiz score</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>lEe6Vf0mnYEnG+fFIhXuXvgOxrE=8/8/2025 6:29:27 PM8/8/2025 6:29:27 PM</TimeStamp>
+      <ID>
+        <String>capstone for cubes</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-08-09T12:25:42.276667Z</LastDeployed>
+</DeploymentSnapshot>

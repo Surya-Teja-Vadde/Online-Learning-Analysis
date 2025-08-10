@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Master_DB"
+  DTS:DTSID="{A173922C-F8E8-45F6-A491-D89C569E92E9}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=10.33.142.33\SQLEXPRESS,1433;User ID=sa;Initial Catalog=Capstone-project;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Package-{A173922C-F8E8-45F6-A491-D89C569E92E9}10.33.142.33\SQLEXPRESS,1433.Capstone-project.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/2nEiJGLE0i+P5eg71KPMwAAAAACAAAAAAAQZgAAAAEAACAAAAAYy66CxDRfp6sZFabK7W5PAp5YQaPKrJeF4Z5hjHmWOgAAAAAOgAAAAAIAACAAAAAonqcN1jqOAlRV6IGH+PwmEH/efY7wWcWA0Qxtk/1U8oAAAABo3a9hpOY4JbucrLZhav1Hgp5A37ouD37k0XZETaEiAY4Pk+7tUsGXaqSBd5F0QscAquirvlbrkNX+qc0cW2yBeL/suZbtQf6roIyEBqoI9LdDkCERfEm+M6iE4Yb4tLygelEH+jvEsb+VAPo22w1+4lyAlVimuU1y2lfQuFQ9gkAAAAC9B7appqI3A3SxxLB3vEvAzzG8sZwOCujgBbYAE5nJ0NX3J8ZP2a5Pcwr0ilrUonMb+zt2ifr9CuePd7AYK8Q9</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
