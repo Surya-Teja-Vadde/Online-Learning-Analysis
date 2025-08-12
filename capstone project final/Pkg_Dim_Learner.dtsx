@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Dim_Learner"
   DTS:PackageType="5"
-  DTS:VersionBuild="55"
-  DTS:VersionGUID="{9A2A1A22-4E2F-4756-A070-78545F13D2C2}">
+  DTS:VersionBuild="56"
+  DTS:VersionGUID="{D73A55B4-E10B-4337-952C-8B0EDFD120D3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/2nEiJGLE0i+P5eg71KPMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADYVHNYOc5Y3F+NFfxLzsTl26VaumIZGWBXuH0EjkmGUgAAAAAOgAAAAAIAACAAAADAivIpVB5msaMKPLt+efCag641KnJPNXYjJJ9ZYdV+bxAAAAAEnVXiqvE/HCr8yHg3iKHSQAAAANHg5ftZLY1IReoO1Kjm1VG2kViKbtC3zJ3VRy8i5wi2K1/g8tirdbExa9R7MIMg2UuMvCEgjrpRLWtUDUFpUdY</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/2nEiJGLE0i+P5eg71KPMwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAKDQ9UGfqrwDJNqPbJebb532s93ax01cbS8smIY1FrZgAAAAAOgAAAAAIAACAAAADXlWuKH3Z5302ppKh4PSwpJ1HS0EdEl5t38D6G4qW/ZBAAAAD2VqSlfJlly8vTywTe6v7yQAAAAMe7YaJzKjFqQ5ApXN5jVoM07E92y/HE2a3njEA5FUUdF14VUju0ZShKHiyf5lBRM0eB0L9N+wl1xvPb675ydkc</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2593,9 +2593,7 @@ where [refTable].[LearnerID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-15.45359375,12.4658203125,30.9071875,9.568359375"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
